@@ -8,7 +8,8 @@ namespace corregidorApi.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<UserData, UserDataResource>();
+            CreateMap<UserData, UserDataResource>();        
+           
         }
     }
 }

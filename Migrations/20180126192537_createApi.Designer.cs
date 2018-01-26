@@ -11,9 +11,10 @@ using System;
 namespace corregidorApi.Migrations
 {
     [DbContext(typeof(CorregidorDbContext))]
-    partial class CorregidorDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180126192537_createApi")]
+    partial class createApi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

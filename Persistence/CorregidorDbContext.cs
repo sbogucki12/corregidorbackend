@@ -9,6 +9,7 @@ namespace corregidorApi.Persistence
         :base(options)
         {
         }        
+        public DbSet<UserData> UserDataContacts {get; set; }
         public DbSet<UserData> UserData { get; set; }
     }
 }

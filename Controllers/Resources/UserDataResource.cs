@@ -1,14 +1,27 @@
-namespace corregidorApi.Controllers.Resources
-{
-    public class UserDataResource
-    {   
+using System.ComponentModel.DataAnnotations;
+
+namespace corregidorApi.Controllers.Resources {
+    public class UserDataResource {
         public int Id { get; set; }
+
+        [StringLength (255)]
         public string FirstName { get; set; }
+
+        [StringLength (255)]
         public string LastName { get; set; }
+
+        [StringLength (255)]
         public string BusinessName { get; set; }
+
+        [StringLength (255)]
+        [Required]
         public string Email { get; set; }
+
+        [StringLength (25)]
         public string Tel { get; set; }
-        public string Comments { get; set; }       
-    
+
+        [StringLength (5000)]
+        public string Comments { get; set; }
+
     }
 }
